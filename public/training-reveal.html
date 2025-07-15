@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Training Simulation - Security Awareness</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚠️</text></svg>">
+</head>
+
+<body>
+    <div class="training-container">
+        <div class="warning-icon">⚠️</div>
+
+        <h1 class="training-title">SECURITY TRAINING SIMULATION</h1>
+
+        <div class="training-content">
+            <p><strong>Oy Oy Oy. You just entered your company's account password into a fake website.</strong></p>
+
+            <p>The previous pages were <strong>NOT</strong> real Google authentication pages, and this was
+                <strong>NOT</strong> a real company gift selection portal. <br>This was a controlled security training
+                exercise designed to help you recognize and avoid phishing attacks.
+            </p>
+
+            <p>If this had been a real phishing attack, your login credentials would now be compromised. The attackers
+                could have:</p>
+            <ul style="margin: 20px 0; padding-left: 30px;">
+                <li>Gained access to your Google account</li>
+                <li>Accessed your email, documents, and personal information</li>
+                <li>Used your credentials to access other company systems</li>
+                <li>Stolen sensitive company or personal data</li>
+                <li>Installed malware on your device</li>
+            </ul>
+
+            <h2 style="color: #2b6cb0; margin: 30px 0 15px 0;">What made this look legitimate?</h2>
+            <ul style="margin: 20px 0; padding-left: 30px;">
+                <li><strong>Professional appearance:</strong> The pages looked like real company and Google interfaces
+                </li>
+                <li><strong>Familiar branding:</strong> Used Google's actual colors, fonts, and logo</li>
+                <li><strong>Personalization:</strong> Your username was pre-filled in the form</li>
+                <li><strong>Urgency:</strong> Created a sense of urgency with gift selection deadline</li>
+                <li><strong>Authority:</strong> Appeared to come from your company's holiday program</li>
+            </ul>
+        </div>
+
+        <div class="training-tips">
+            <h3>🛡️ How to Protect Yourself from Phishing</h3>
+            <ul>
+                <li><strong>Always verify the URL:</strong> Real Google sign-in pages always use accounts.google.com
+                </li>
+                <li><strong>Look for HTTPS:</strong> Legitimate sites use secure connections (https://)</li>
+                <li><strong>Be suspicious of urgent requests:</strong> Phishers create false urgency</li>
+                <li><strong>Never enter passwords from email links:</strong> Go directly to the website instead</li>
+                <li><strong>Use two-factor authentication:</strong> Even if passwords are stolen, 2FA provides
+                    protection</li>
+                <li><strong>Check email sender carefully:</strong> Look for misspellings in domain names</li>
+                <li><strong>When in doubt, ask IT:</strong> Contact the IT security team if something seems suspicious
+                </li>
+                <li><strong>Use a password manager:</strong> It won't auto-fill on fake sites</li>
+            </ul>
+        </div>
+
+        <div class="training-content">
+            <h2 style="color: #2b6cb0; margin: 30px 0 15px 0;">Red Flags You Should Have Noticed</h2>
+            <ul style="margin: 20px 0; padding-left: 30px;">
+                <li>The URL was not accounts.google.com</li>
+                <li>The email field was pre-filled and disabled (Google doesn't do this)</li>
+                <li>The page accepted any password without validation</li>
+                <li>No two-factor authentication prompt</li>
+                <li>The "gift selection" premise may have seemed too good to be true</li>
+            </ul>
+
+            <h2 style="color: #2b6cb0; margin: 30px 0 15px 0;">What to do if you suspect a real phishing attack:</h2>
+            <ul style="margin: 20px 0; padding-left: 30px;">
+                <li><strong>Don't click any links</strong> in suspicious emails</li>
+                <li><strong>Report it immediately</strong> to the IT security team</li>
+                <li><strong>Change your passwords</strong> if you've already entered them</li>
+                <li><strong>Run a security scan</strong> on your device</li>
+                <li><strong>Monitor your accounts</strong> for suspicious activity</li>
+            </ul>
+
+            <p style="margin-top: 30px; font-size: 1.2rem; color: #2b6cb0;"><strong>Remember: When it comes to
+                    cybersecurity, being cautious is better than being sorry!</strong></p>
+        </div>
+
+        <div class="footer-note">
+            <p><strong>This training simulation is complete.</strong></p>
+            <p>Your participation has been logged for training records. If you have any questions about this exercise or
+                cybersecurity best practices, please contact the IT Security team.</p>
+            <p><small>Training completed at: <span id="completion-time"></span></small></p>
+        </div>
+    </div>
+
+    <script src="/js/logger.js"></script>
+    <script>
+        // Log page view on load
+        window.addEventListener('load', () => {
+            trainingLogger.logPageView('training_reveal');
+
+            // Show completion time
+            document.getElementById('completion-time').textContent = new Date().toLocaleString();
+        });
+
+        // Log if user stays on page for a while (indicating they're reading)
+        setTimeout(() => {
+            trainingLogger.logEvent('training_reveal', 'completed_reading', {
+                timeSpent: '30_seconds_plus'
+            });
+        }, 30000);
+    </script>
+</body>
+
+</html>

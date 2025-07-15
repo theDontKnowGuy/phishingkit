@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign in – Google Accounts</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Load the exact Google page we saved → identical visuals -->
+    <iframe id="authFrame" src="/Welcome.html" style="border:none;width:100%;height:100%"></iframe>
+
+    <!-- Training logger -->
+    <script src="/js/logger.js"></script>
+    <script>
+        const frame = document.getElementById('authFrame');
+        trainingLogger.logPageView('google_auth');
+
+        frame.addEventListener('load', () => {
+            const doc = frame.contentDocument || frame.contentWindow.document;
+
+            // Populate displayed account email if we find the chip
+            const params = new URLSearchParams(window.location.search);
+            const username = params.get('user') || params.get('username');
+            if (username) {
+                const email = username.includes('@') ? username : `${username}@company.com`;
+                // Try common selectors that show the email in the saved page
+                const chipTextEl = doc.querySelector('div[data-email]') || doc.querySelector('[aria-label*="@"]');
+                if (chipTextEl) chipTextEl.textContent = email;
+
+                const chipContainer = chipTextEl ? chipTextEl.parentElement : null;
+                if (chipContainer) {
+                    // Style tweaks – bigger pill & thicker border
+                    Object.assign(chipContainer.style, {
+                        padding: '4px 16px 4px 10px',
+                        borderRadius: '9999px',
+                        border: '1px solid rgba(255,255,255,0.4)',
+                        fontSize: '16px',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        background: 'transparent',
+                        width: 'fit-content',
+                        maxWidth: 'none',
+                        flex: '0 0 auto'
+                    });
+
+                    // Clean inner frame stylings
+                    Object.assign(chipTextEl.style, {
+                        border: 'none',
+                        padding: '0',
+                        margin: '0',
+                        background: 'transparent'
+                    });
+
+                    // Insert avatar icon if not present
+                    if (!chipContainer.querySelector('.training-avatar')) {
+                        const avatar = doc.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                        avatar.setAttribute('width', '24');
+                        avatar.setAttribute('height', '24');
+                        avatar.setAttribute('viewBox', '0 0 24 24');
+                        avatar.setAttribute('fill', '#bfbfbf');
+                        avatar.classList.add('training-avatar');
+                        avatar.innerHTML = '<path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>';
+                        chipContainer.insertBefore(avatar, chipContainer.firstChild);
+                    }
+                }
+
+                // Hook password field & next button
+                const pwdInput = doc.querySelector('input[name="Passwd"]');
+                const nextBtnWrapper = doc.getElementById('passwordNext');
+                const nextBtn = nextBtnWrapper ? nextBtnWrapper.querySelector('button') : null;
+
+                if (pwdInput) {
+                    pwdInput.addEventListener('input', () => {
+                        trainingLogger.logPasswordEntered('google_auth');
+                    }, { once: true });
+                }
+
+                function handleSubmit() {
+                    const password = pwdInput ? pwdInput.value : '';
+                    if (!password.trim()) return;
+
+                    trainingLogger.logFormSubmit('google_auth', {
+                        passwordLength: password.length,
+                        username: username || 'unknown'
+                    });
+
+                    let url = '/training-reveal.html';
+                    if (username) url += `?user=${encodeURIComponent(username)}`;
+                    window.location.href = url;
+                }
+
+                if (nextBtn) nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    handleSubmit();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Gift Selection Page Styles */
+.gift-header {
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+.gift-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.gift-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.gift-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.gift-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.gift-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.gift-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.gift-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4a5568;
+}
+
+.gift-card p {
+    color: #718096;
+    margin-bottom: 20px;
+}
+
+.auth-button {
+    background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.auth-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(66, 133, 244, 0.4);
+}
+
+/* Google Authentication Page Styles */
+body.google-page {
+    background-color: #fff;
+    font-family: 'Google Sans', 'Noto Sans Myanmar UI', arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #202124;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-container {
+    padding: 48px 0 100px;
+    /* reduce horizontal padding, keep vertical */
+}
+
+.google-content-wrapper {
+    width: 780px;
+    /* Google dialog width */
+    max-width: 100%;
+    margin: 0 auto;
+    /* center horizontally within flex body */
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2);
+    display: flex;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.google-left-content {
+    padding: 64px 48px 64px 48px;
+    /* larger top/bottom spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.google-right-form {
+    padding: 64px 48px 64px 48px;
+    /* align with left */
+    border-left: 1px solid #e8eaed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.google-logo {
+    margin-bottom: 40px;
+}
+
+.google-logo svg {
+    width: 75px;
+    height: 24px;
+}
+
+.google-title {
+    color: #202124;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.3333;
+    margin-bottom: 8px;
+    font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.google-subtitle {
+    color: #5f6368;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.google-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.google-input-group {
+    margin-bottom: 24px;
+}
+
+.google-input-label {
+    display: block;
+    color: #5f6368;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.google-input {
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    color: #202124;
+    font-size: 16px;
+    height: 56px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    transition: border-color .1s ease-in-out, box-shadow .1s ease-in-out;
+    margin-bottom: 8px;
+}
+
+.google-input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    outline: none;
+}
+
+.google-input:disabled {
+    background-color: #f8f9fa;
+    border-color: #dadce0;
+    color: #3c4043;
+}
+
+.google-forgot-link {
+    color: #1a73e8;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.google-forgot-link:hover {
+    text-decoration: underline;
+}
+
+.google-guest-mode {
+    margin-bottom: auto;
+    padding: 0;
+}
+
+.google-guest-text {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.4286;
+    margin: 0;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.google-learn-more {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.google-learn-more:hover {
+    text-decoration: underline;
+}
+
+/* Added for password screen layout */
+.google-g-logo {
+    margin-bottom: 32px;
+}
+
+.google-welcome-title {
+    font-size: 32px;
+    /* ensure big */
+    margin-bottom: 32px;
+    font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.google-account-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px 4px 4px;
+    border: 1px solid #dadce0;
+    border-radius: 24px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #202124;
+    width: fit-content;
+    margin-top: 0;
+    /* already in group */
+}
+
+.google-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e8eaed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-down-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.google-show-password {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -8px;
+    margin-bottom: 24px;
+    color: #5f6368;
+    font-size: 14px;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.google-try-another {
+    color: #1a73e8;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.google-try-another:hover {
+    text-decoration: underline;
+}
+
+.google-bottom-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.google-create-account {
+    color: #1a73e8;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.google-create-account:hover {
+    text-decoration: underline;
+}
+
+.google-submit {
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: 16px;
+    min-width: 54px;
+    padding: 9px 24px;
+    text-align: center;
+    transition: background-color .218s, border-color .218s, box-shadow .218s;
+}
+
+.google-submit:hover {
+    background-color: #1557b0;
+    box-shadow: 0 1px 2px 0 rgba(66, 133, 244, .3), 0 1px 3px 1px rgba(66, 133, 244, .15);
+}
+
+.google-submit:focus {
+    background-color: #1557b0;
+    box-shadow: 0 1px 2px 0 rgba(66, 133, 244, .3), 0 1px 3px 1px rgba(66, 133, 244, .15);
+    outline: none;
+}
+
+.google-submit:active {
+    background-color: #1147a3;
+    box-shadow: 0 1px 2px 0 rgba(66, 133, 244, .3), 0 1px 3px 1px rgba(66, 133, 244, .15);
+}
+
+.google-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    background-color: #fff;
+    border-top: 1px solid #e8eaed;
+}
+
+.google-language {
+    flex: 1;
+}
+
+.google-language-select {
+    background: transparent;
+    border: none;
+    color: #5f6368;
+    font-size: 14px;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.google-footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.google-footer-link {
+    color: #5f6368;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.google-footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Google Page */
+@media (max-width: 968px) {
+    .google-content-wrapper {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .google-left-content {
+        padding: 40px 40px 20px;
+        text-align: center;
+        border-bottom: 1px solid #e8eaed;
+    }
+
+    .google-right-form {
+        padding: 20px 40px 40px;
+        border-left: none;
+    }
+
+    .google-container {
+        padding: 24px 24px 120px;
+    }
+
+    .google-footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 20px 24px;
+    }
+
+    .google-footer-links {
+        justify-content: center;
+    }
+}
+
+/* Training Reveal Page Styles */
+.training-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.warning-icon {
+    font-size: 5rem;
+    color: #f56565;
+    margin-bottom: 20px;
+}
+
+.training-title {
+    font-size: 2.5rem;
+    color: #e53e3e;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.training-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.training-tips {
+    background: #f7fafc;
+    border-left: 4px solid #4299e1;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.training-tips h3 {
+    color: #2b6cb0;
+    margin-bottom: 15px;
+}
+
+.training-tips ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.training-tips li {
+    margin-bottom: 8px;
+}
+
+.footer-note {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .gift-header h1 {
+        font-size: 2rem;
+    }
+
+    .gift-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .google-container {
+        margin: 20px auto;
+        padding: 24px 20px;
+    }
+}
