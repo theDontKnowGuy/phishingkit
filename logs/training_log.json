@@ -1452,5 +1452,307 @@
     "ip": "::1",
     "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
     "url": "http://localhost:3000/training-reveal.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:08.308Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:09.903Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "password_entered",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:10.685Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "form_submit",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235",
+    "formData": {
+      "passwordLength": 8,
+      "username": "234235"
+    }
+  },
+  {
+    "timestamp": "2025-07-15T13:59:10.734Z",
+    "username": "234235",
+    "page": "training_reveal",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/training-reveal.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:12.183Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:17.278Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:19.692Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "password_entered",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:20.341Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "form_submit",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235",
+    "formData": {
+      "passwordLength": 8,
+      "username": "234235"
+    }
+  },
+  {
+    "timestamp": "2025-07-15T13:59:20.382Z",
+    "username": "234235",
+    "page": "training_reveal",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/training-reveal.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:22.776Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:24.093Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:29.238Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:30.689Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "password_entered",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:31.416Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "form_submit",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235",
+    "formData": {
+      "passwordLength": 8,
+      "username": "234235"
+    }
+  },
+  {
+    "timestamp": "2025-07-15T13:59:31.456Z",
+    "username": "234235",
+    "page": "training_reveal",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/training-reveal.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:34.087Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:35.046Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:37.319Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "password_entered",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T13:59:37.869Z",
+    "username": "234235",
+    "page": "google_auth",
+    "action": "form_submit",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=234235",
+    "formData": {
+      "passwordLength": 6,
+      "username": "234235"
+    }
+  },
+  {
+    "timestamp": "2025-07-15T13:59:37.914Z",
+    "username": "234235",
+    "page": "training_reveal",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/training-reveal.html?user=234235"
+  },
+  {
+    "timestamp": "2025-07-15T14:00:08.206Z",
+    "username": "234235",
+    "page": "training_reveal",
+    "action": "completed_reading",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/training-reveal.html?user=234235",
+    "timeSpent": "30_seconds_plus"
+  },
+  {
+    "timestamp": "2025-07-15T14:33:44.625Z",
+    "username": "unknown",
+    "page": "gift_selection",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-07-15T14:33:46.735Z",
+    "username": "unknown",
+    "page": "gift_selection",
+    "action": "button_click",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/",
+    "buttonName": "authenticate_button"
+  },
+  {
+    "timestamp": "2025-07-15T14:33:46.798Z",
+    "username": "unknown",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html"
+  },
+  {
+    "timestamp": "2025-07-15T14:33:53.205Z",
+    "username": "unknown",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html"
+  },
+  {
+    "timestamp": "2025-07-15T14:34:15.996Z",
+    "username": "unknown",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html"
+  },
+  {
+    "timestamp": "2025-07-15T14:34:23.556Z",
+    "username": "dsvdfbdg",
+    "page": "google_auth",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=dsvdfbdg"
+  },
+  {
+    "timestamp": "2025-07-15T14:34:25.851Z",
+    "username": "dsvdfbdg",
+    "page": "google_auth",
+    "action": "password_entered",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=dsvdfbdg"
+  },
+  {
+    "timestamp": "2025-07-15T14:34:26.637Z",
+    "username": "dsvdfbdg",
+    "page": "google_auth",
+    "action": "form_submit",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/google-auth.html?user=dsvdfbdg",
+    "formData": {
+      "passwordLength": 8,
+      "username": "dsvdfbdg"
+    }
+  },
+  {
+    "timestamp": "2025-07-15T14:34:26.693Z",
+    "username": "dsvdfbdg",
+    "page": "training_reveal",
+    "action": "page_view",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/training-reveal.html?user=dsvdfbdg"
+  },
+  {
+    "timestamp": "2025-07-15T14:34:56.698Z",
+    "username": "dsvdfbdg",
+    "page": "training_reveal",
+    "action": "completed_reading",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/training-reveal.html?user=dsvdfbdg",
+    "timeSpent": "30_seconds_plus"
   }
 ]
