@@ -1,18 +1,32 @@
 {
-    "name": "phishing-training-kit",
+    "name": "phishing-kit",
     "version": "1.0.0",
-    "description": "Phishing awareness training webapp",
+    "description": "Phishing awareness training kit",
     "main": "server.js",
     "scripts": {
         "start": "node server.js",
-        "dev": "nodemon server.js"
+        "dev": "nodemon server.js",
+        "send-emails": "node email-sender.js"
     },
     "dependencies": {
         "express": "^4.18.2",
-        "body-parser": "^1.20.2",
-        "cors": "^2.8.5"
+        "path": "^0.12.7",
+        "nodemailer": "^6.9.8",
+        "dotenv": "^16.3.1",
+        "cors": "^2.8.5",
+        "body-parser": "^1.20.2"
     },
     "devDependencies": {
         "nodemon": "^3.0.2"
-    }
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "keywords": [
+        "phishing",
+        "security",
+        "training"
+    ],
+    "author": "PathID Security Team",
+    "license": "MIT"
 }

@@ -23,29 +23,71 @@ A realistic phishing simulation webapp for security awareness training. This too
 npm install
 ```
 
-2. **Start the server:**
+2. **Setup environment variables:**
+```bash
+# Create .env file from example
+cp .env.example .env
+
+# Edit .env with your credentials
+nano .env
+```
+
+Required environment variables:
+- `SMTP_USER`: Your Gmail address
+- `SMTP_PASS`: Your Gmail App Password
+- `PHISHING_URL`: Your deployed phishing site URL
+
+3. **Start the server:**
 ```bash
 npm start
 ```
 
-3. **For development with auto-restart:**
+4. **For development with auto-restart:**
 ```bash
 npm run dev
 ```
 
 The application will be available at `http://localhost:3000`
 
-## 📧 Setting Up Email Links
+## 📧 Email Campaign Setup
 
-When sending phishing training emails to employees, use URLs in this format:
+### Automated Email Sending
+
+The kit includes an automated email sender that can send phishing emails to target lists:
+
+1. **Setup environment variables:**
+   - Copy the example: `cp .env.example .env`
+   - Edit `.env` with your Gmail credentials and phishing URL
+   - Set up Gmail App Password (see below)
+
+2. **Configure target list:**
+   - Edit the email list in `email-sender.js`, or
+   - Create `targets.txt` and use `send-campaign.js`
+
+3. **Run the email campaign:**
+```bash
+npm run send-emails
+```
+
+### Gmail App Password Setup
+
+For SMTP authentication:
+
+1. **Enable 2-Factor Authentication:**
+   - Go to https://myaccount.google.com/security
+   - Turn on 2-Step Verification
+
+2. **Generate App Password:**
+   - Go to https://myaccount.google.com/apppasswords
+   - Select "Mail" → Generate password
+   - Update `email-sender.js` with the generated password
+
+### Manual Email Links
+
+For manual email campaigns, use URLs in this format:
 
 ```
-http://your-server.com/?user=john.smith
-```
-
-Or with full email:
-```
-http://your-server.com/?user=john.smith@company.com
+https://your-server.com/?user=john.smith@company.com
 ```
 
 The username parameter will be:
