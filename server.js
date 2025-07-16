@@ -90,6 +90,20 @@ app.get('/api/logs', (req, res) => {
     }
 });
 
+// API to clear logs (for admin purposes)
+app.delete('/api/logs', (req, res) => {
+    const logFile = path.join(logsDir, 'training_log.json');
+
+    try {
+        fs.writeFileSync(logFile, JSON.stringify([], null, 2));
+        console.log('✅ Logs cleared by admin request');
+        res.json({ success: true, message: 'Logs cleared successfully' });
+    } catch (err) {
+        console.error('❌ Error clearing logs:', err);
+        res.status(500).json({ error: 'Error clearing logs' });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Phishing training server running on port ${PORT}`);
     console.log(`Access the app at: http://localhost:${PORT}`);
